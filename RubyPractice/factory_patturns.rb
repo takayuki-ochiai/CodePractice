@@ -38,23 +38,81 @@ class Frog
   end
 end
 
+class Algae
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+
+  def grow
+    puts "藻#{name}は光をあびてすくすく育ちます"
+  end
+end
+
+class WaterLily
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+
+  def grow
+    puts "睡蓮#{name}は水に浮かびながら光をあびて育ちます"
+  end
+end
+
+
+
 class Pond
-  def initialize(number_ducks)
-    @ducks = []
-    number_ducks.times do |i|
-      duck = Duck.new("アヒル#{i}")
-      @ducks << duck
+  def initialize(number_animals, number_plants)
+    @animals = []
+    number_animals.times do |i|
+      animal = new_animal("動物#{i}")
+      @animals << animal
+    end
+
+    @plants = []
+    number_plants.times do |i|
+      plant = new_plant("植物#{i}")
+      @plants << plant
     end
   end
 
   def simulate_one_day
-    @ducks.each do |duck|
-       duck.eat
-       duck.speak
-       duck.sleep
+    @animals.each do |animal|
+       animal.eat
+       animal.speak
+       animal.sleep
+    end
+
+    @plants.each do |plant|
+        plant.grow
     end
   end
 end
 
-pond = Pond.new(5)
+class FrogPond < Pond
+  def new_animal(name)
+    Frog.new(name)
+  end
+end
+
+class DuckPond < Pond
+  def new_animal(name)
+    Duck.new(name)
+  end
+end
+
+class FrogAlgaePond < Pond
+  def new_animal(name)
+    Frog.new(name)
+  end
+
+  def new_plant(name)
+    Algae.new(name)
+  end
+end
+
+pond = FrogAlgaePond.new(4, 3)
 pond.simulate_one_day
