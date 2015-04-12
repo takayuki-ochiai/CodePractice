@@ -116,3 +116,47 @@ end
 
 pond = FrogAlgaePond.new(4, 3)
 pond.simulate_one_day
+
+#オブジェクトの型ごとに別々のサブクラスが必要になるのは問題
+#つくりたいオブジェクトのクラスをインスタンス変数に格納することでこのPondクラスのサブクラス階層をなくすことができる
+
+class Pond
+  def initialize(number_animals, animal_class, number_plants, plant_class)
+    @animal_class = animal_class
+    @plant_class = plant_class
+
+    @animals = []
+    number_animals.times do |i|
+      animal = new_organism(:animal, "動物#{i}")
+      @animals << animal
+    end
+
+    @plants = []
+    number_plants.times do |i|
+      plant = new_organism(:plant, "植物#{i}")
+      @plants << plant
+    end
+  end
+
+  def simulate_one_day
+    @plants.each { |plant| plant.grow }
+    @animals.each do |animal|
+      animal.speak
+      animal.eat
+      animal.sleep
+    end
+  end
+
+  def new_organism(type, name)
+    if type == :animal
+      @animal_class.new(name)
+    elsif type == :plant
+      @plant_class.new(name)
+    else
+      raise "Unknown organism type: #{type}"
+    end
+  end
+end
+
+pond = Pond.new(3, Duck, 2, WaterLily)
+pond.simulate_one_day
