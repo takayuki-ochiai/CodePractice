@@ -24,6 +24,6 @@ class Books {
         Book copyBook = new Book(book);
 
         book.print();
-        copyBook,print();
+        copyBook.print();
     }
 }
