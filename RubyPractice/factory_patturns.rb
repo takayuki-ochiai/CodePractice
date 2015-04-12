@@ -114,26 +114,75 @@ class FrogAlgaePond < Pond
   end
 end
 
-pond = FrogAlgaePond.new(4, 3)
-pond.simulate_one_day
+# pond = FrogAlgaePond.new(4, 3)
+# pond.simulate_one_day
 
 #オブジェクトの型ごとに別々のサブクラスが必要になるのは問題
 #つくりたいオブジェクトのクラスをインスタンス変数に格納することでこのPondクラスのサブクラス階層をなくすことができる
 
-class Pond
-  def initialize(number_animals, animal_class, number_plants, plant_class)
+#ついでにAbstractファクトリに改造する
+
+
+class Tree
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+
+  def grow
+    puts "樹木#{name}は鬱蒼と生い茂ってます"
+  end
+end
+
+class Tiger
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+
+  def eat
+    puts "トラ#{name}はがつがつ肉をくってます"
+  end
+
+  def sleep
+    puts "トラ#{name}は木の上でぐっすり眠っています"
+  end
+
+  def speak
+    puts "トラ#{name}はガオガオ鳴いています  "
+  end
+end
+
+class OrganismFactory
+  def initialize(animal_class, plant_class)
     @animal_class = animal_class
     @plant_class = plant_class
 
+    def new_animal(name)
+      @animal_class.new(name)
+    end
+
+    def new_plant(name)
+      @plant_class.new(name)
+    end
+  end
+end
+
+class Habitat
+  def initialize(number_animals, number_plants, organism_factory)
+    @organism_factory = organism_factory
+
     @animals = []
     number_animals.times do |i|
-      animal = new_organism(:animal, "動物#{i}")
+      animal = @organism_factory.new_animal("動物#{i}")
       @animals << animal
     end
 
     @plants = []
     number_plants.times do |i|
-      plant = new_organism(:plant, "植物#{i}")
+      plant = @organism_factory.new_plant("植物#{i}")
       @plants << plant
     end
   end
@@ -141,22 +190,12 @@ class Pond
   def simulate_one_day
     @plants.each { |plant| plant.grow }
     @animals.each do |animal|
-      animal.speak
       animal.eat
+      animal.speak
       animal.sleep
-    end
-  end
-
-  def new_organism(type, name)
-    if type == :animal
-      @animal_class.new(name)
-    elsif type == :plant
-      @plant_class.new(name)
-    else
-      raise "Unknown organism type: #{type}"
     end
   end
 end
 
-pond = Pond.new(3, Duck, 2, WaterLily)
+pond = Habitat.new(3, 2, OrganismFactory.new(Frog, Algae))
 pond.simulate_one_day
