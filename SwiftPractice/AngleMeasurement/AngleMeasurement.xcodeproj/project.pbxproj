@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16112EC71AECC283009213EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16112EC61AECC283009213EC /* AppDelegate.swift */; };
+		16112EC91AECC283009213EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16112EC81AECC283009213EC /* ViewController.swift */; };
+		16112ECC1AECC283009213EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16112ECA1AECC283009213EC /* Main.storyboard */; };
+		16112ECE1AECC283009213EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16112ECD1AECC283009213EC /* Images.xcassets */; };
+		16112ED11AECC283009213EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16112ECF1AECC283009213EC /* LaunchScreen.xib */; };
+		16112EDD1AECC283009213EC /* AngleMeasurementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16112EDC1AECC283009213EC /* AngleMeasurementTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16112ED71AECC283009213EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16112EB91AECC283009213EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16112EC01AECC283009213EC;
+			remoteInfo = AngleMeasurement;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16112EC11AECC283009213EC /* AngleMeasurement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngleMeasurement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16112EC51AECC283009213EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16112EC61AECC283009213EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16112EC81AECC283009213EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16112ECB1AECC283009213EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16112ECD1AECC283009213EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		16112ED01AECC283009213EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		16112ED61AECC283009213EC /* AngleMeasurementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngleMeasurementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16112EDB1AECC283009213EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16112EDC1AECC283009213EC /* AngleMeasurementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleMeasurementTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16112EBE1AECC283009213EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16112ED31AECC283009213EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16112EB81AECC283009213EC = {
+			isa = PBXGroup;
+			children = (
+				16112EC31AECC283009213EC /* AngleMeasurement */,
+				16112ED91AECC283009213EC /* AngleMeasurementTests */,
+				16112EC21AECC283009213EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16112EC21AECC283009213EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16112EC11AECC283009213EC /* AngleMeasurement.app */,
+				16112ED61AECC283009213EC /* AngleMeasurementTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16112EC31AECC283009213EC /* AngleMeasurement */ = {
+			isa = PBXGroup;
+			children = (
+				16112EC61AECC283009213EC /* AppDelegate.swift */,
+				16112EC81AECC283009213EC /* ViewController.swift */,
+				16112ECA1AECC283009213EC /* Main.storyboard */,
+				16112ECD1AECC283009213EC /* Images.xcassets */,
+				16112ECF1AECC283009213EC /* LaunchScreen.xib */,
+				16112EC41AECC283009213EC /* Supporting Files */,
+			);
+			path = AngleMeasurement;
+			sourceTree = "<group>";
+		};
+		16112EC41AECC283009213EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16112EC51AECC283009213EC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16112ED91AECC283009213EC /* AngleMeasurementTests */ = {
+			isa = PBXGroup;
+			children = (
+				16112EDC1AECC283009213EC /* AngleMeasurementTests.swift */,
+				16112EDA1AECC283009213EC /* Supporting Files */,
+			);
+			path = AngleMeasurementTests;
+			sourceTree = "<group>";
+		};
+		16112EDA1AECC283009213EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16112EDB1AECC283009213EC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16112EC01AECC283009213EC /* AngleMeasurement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16112EE01AECC283009213EC /* Build configuration list for PBXNativeTarget "AngleMeasurement" */;
+			buildPhases = (
+				16112EBD1AECC283009213EC /* Sources */,
+				16112EBE1AECC283009213EC /* Frameworks */,
+				16112EBF1AECC283009213EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AngleMeasurement;
+			productName = AngleMeasurement;
+			productReference = 16112EC11AECC283009213EC /* AngleMeasurement.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16112ED51AECC283009213EC /* AngleMeasurementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16112EE31AECC283009213EC /* Build configuration list for PBXNativeTarget "AngleMeasurementTests" */;
+			buildPhases = (
+				16112ED21AECC283009213EC /* Sources */,
+				16112ED31AECC283009213EC /* Frameworks */,
+				16112ED41AECC283009213EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16112ED81AECC283009213EC /* PBXTargetDependency */,
+			);
+			name = AngleMeasurementTests;
+			productName = AngleMeasurementTests;
+			productReference = 16112ED61AECC283009213EC /* AngleMeasurementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16112EB91AECC283009213EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "落合隆行";
+				TargetAttributes = {
+					16112EC01AECC283009213EC = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					16112ED51AECC283009213EC = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 16112EC01AECC283009213EC;
+					};
+				};
+			};
+			buildConfigurationList = 16112EBC1AECC283009213EC /* Build configuration list for PBXProject "AngleMeasurement" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16112EB81AECC283009213EC;
+			productRefGroup = 16112EC21AECC283009213EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16112EC01AECC283009213EC /* AngleMeasurement */,
+				16112ED51AECC283009213EC /* AngleMeasurementTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16112EBF1AECC283009213EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16112ECC1AECC283009213EC /* Main.storyboard in Resources */,
+				16112ED11AECC283009213EC /* LaunchScreen.xib in Resources */,
+				16112ECE1AECC283009213EC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16112ED41AECC283009213EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16112EBD1AECC283009213EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16112EC91AECC283009213EC /* ViewController.swift in Sources */,
+				16112EC71AECC283009213EC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16112ED21AECC283009213EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16112EDD1AECC283009213EC /* AngleMeasurementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16112ED81AECC283009213EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16112EC01AECC283009213EC /* AngleMeasurement */;
+			targetProxy = 16112ED71AECC283009213EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16112ECA1AECC283009213EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16112ECB1AECC283009213EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16112ECF1AECC283009213EC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16112ED01AECC283009213EC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16112EDE1AECC283009213EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16112EDF1AECC283009213EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16112EE11AECC283009213EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AngleMeasurement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16112EE21AECC283009213EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AngleMeasurement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		16112EE41AECC283009213EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AngleMeasurementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngleMeasurement.app/AngleMeasurement";
+			};
+			name = Debug;
+		};
+		16112EE51AECC283009213EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AngleMeasurementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngleMeasurement.app/AngleMeasurement";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16112EBC1AECC283009213EC /* Build configuration list for PBXProject "AngleMeasurement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16112EDE1AECC283009213EC /* Debug */,
+				16112EDF1AECC283009213EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16112EE01AECC283009213EC /* Build configuration list for PBXNativeTarget "AngleMeasurement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16112EE11AECC283009213EC /* Debug */,
+				16112EE21AECC283009213EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16112EE31AECC283009213EC /* Build configuration list for PBXNativeTarget "AngleMeasurementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16112EE41AECC283009213EC /* Debug */,
+				16112EE51AECC283009213EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16112EB91AECC283009213EC /* Project object */;
+}
