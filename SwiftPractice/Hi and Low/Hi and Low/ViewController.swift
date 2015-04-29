@@ -9,6 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var guide: UILabel!
+    @IBOutlet weak var input: UITextField!
+    @IBOutlet weak var hitCounter: UILabel!
+    var count = 0
+    var rndInt1 = Int(arc4random_uniform(19))
+    
+    //簡単バージョン
+    
+    var rndInt2 = Int(arc4random_uniform(19))
+    
+    @IBAction func TouchBtnGo(sender: AnyObject) {
+        var inputValue = input.text.toInt()!
+        confirmInputNum(&rndInt1, inputNum: inputValue, guide: guide, count: &count, label: hitCounter)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,75 +46,26 @@ class ViewController: UIViewController {
     }
     
     func showFirstMessage(guide: UILabel, hitCounter: UILabel) {
-        guide.text = "1~19までの数字を入力してください"
+        guide.text = "数字を入力してください"
         hitCounter.text = "当たるまでの回数: 0回"
     }
     
-    @IBOutlet weak var guide: UILabel!
-    @IBOutlet weak var input: UITextField!
-    @IBOutlet weak var hitCounter: UILabel!
-    var count = 0
-    var rndInt1 = Int(arc4random_uniform(19))
-    
-    @IBAction func TouchBtnGo(sender: AnyObject) {
-        var inputValue = input.text.toInt()!
-        
-        if inputValue > rndInt1 {
+    func confirmInputNum(inout rndInt: Int, inputNum: Int, guide: UILabel, inout count: Int, label: UILabel) {
+        if inputNum > rndInt {
             guide.text = "もっと小さいです"
             count++
-            reloadCounter(count, label: hitCounter)
-        } else if inputValue < rndInt1 {
+            reloadCounter(count, label: label)
+        } else if inputNum < rndInt {
             guide.text = "もっと大きいです"
             count++
-            reloadCounter(count, label: hitCounter)
+            reloadCounter(count, label: label)
         } else {
             var alert = UIAlertView()
             alert.title = "あたりです"
             alert.message = "あたりです"
             alert.addButtonWithTitle("OK")
             alert.show()
-            reset(&count, rndInt: &rndInt1, label: hitCounter)
+            reset(&count, rndInt: &rndInt, label: label)
         }
     }
 }
-//
-//class Page1ViewController: ViewController {
-//    @IBOutlet weak var guide: UILabel!
-//    @IBOutlet weak var input: UITextField!
-//    @IBOutlet weak var hitCounter: UILabel!
-//    
-//    var count = 0
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        // Do any additional setup after loading the view, typically from a nib.
-//        guide.text = "0 ~ 19の数字を入れてボタンを押してください"
-//        hitCounter.text = "当たるまでの回数: \(count)回"
-//    }
-//    
-//    var rndInt1 = Int(arc4random_uniform(19))
-//    
-//
-//    
-//    @IBAction func TouchBtnGo(sender: AnyObject) {
-//        var inputValue = input.text.toInt()!
-//        
-//        if inputValue > rndInt1 {
-//            guide.text = "もっと小さいです"
-//            count++
-//            reloadCounter(count, label: hitCounter)
-//        } else if inputValue < rndInt1 {
-//            guide.text = "もっと大きいです"
-//            count++
-//            reloadCounter(count, label: hitCounter)
-//        } else {
-//            var alert = UIAlertView()
-//            alert.title = "あたりです"
-//            alert.message = "あたりです"
-//            alert.addButtonWithTitle("OK")
-//            alert.show()
-//            reset(&count, rndInt: &rndInt1, label: hitCounter)
-//        }
-//    }
-//}
-

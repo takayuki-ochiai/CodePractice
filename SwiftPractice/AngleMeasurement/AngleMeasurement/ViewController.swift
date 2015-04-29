@@ -7,11 +7,25 @@
 //
 
 import UIKit
-
+import CoreMotion
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var attitudeRoll: UILabel!
+    let motionManager: CMMotionManager = CMMotionManager()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Initialize MotionManager
+        motionManager.deviceMotionUpdateInterval = 0.05 // 20Hz
+        // Start motion data acquisition
+        motionManager.startDeviceMotionUpdatesToQueue( NSOperationQueue.currentQueue(), withHandler:{
+            deviceManager, error in
+
+            var attitude: CMAttitude = deviceManager.attitude
+            self.attitudeRoll.text = String(format: "%.2f", attitude.roll)
+        })
+        
+        //attitudeRoll.text = "hoge"
         // Do any additional setup after loading the view, typically from a nib.
     }
 
