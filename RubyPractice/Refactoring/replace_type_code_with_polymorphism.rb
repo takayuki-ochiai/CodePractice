@@ -47,3 +47,4 @@ bike = FrontSuspensionMoutainBike.new(type_code: :front_suspension, tire_width: 
 #気づき : タイプコードが必要になっているクラスは大体templateやstrategyが必要になってくるはずで、まあ今回は種類の違いなのでtemplateっていう判断はまあ間違いではない。バイクの種類が変更になるってこともないだろうしな。
 
 #このリファクタリングの趣旨は、テンプレートパターンにはまりそうなwhen caseは撲滅しようねってことだと思った。
+
