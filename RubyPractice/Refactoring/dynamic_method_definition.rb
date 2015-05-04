@@ -41,3 +41,5 @@ class Post
 
   states :failure, :error, :success
 end
+
+#こっちで必要になったらモジュールとして切り離してextendで使う方が好みだ
