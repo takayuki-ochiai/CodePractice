@@ -3,5 +3,3 @@ class Calc
     x + y
   end
 end
-
-puts "hoge"
