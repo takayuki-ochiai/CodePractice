@@ -19,8 +19,19 @@ class Person
   def office_area_code=(arg)
     @office_telephone.area_code = arg
   end
+
+  def office_telephone
+    @office_telephone
+  end
 end
 
 class TelephoneNumber
   attr_accessor :area_code, :number
+
+  def telephone_number
+    '(' + area_code + ')' + number
+  end
 end
+
+#気づき: このサンプルだとあまりありがたみがわからないかもしれない。
+#メソッドのサブセットとデータのサブセットが１つにまとまっている感じを読み取って分割するのがよいというアドバイスには納得感がある。
