@@ -9,3 +9,4 @@ class Account
     important_value3 - 2 * important_value1
   end
 end
+
