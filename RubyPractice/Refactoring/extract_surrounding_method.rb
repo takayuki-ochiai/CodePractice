@@ -12,16 +12,24 @@ class Person
   end
 
   def number_of_living_decendants
-    children.inject(0) do |count, child|
-      count += 1 if child.alive?
-      count + child.number_of_living_decendants
-    end
+    count_descendants_matching{ |descendant| descendant.alive? }
   end
 
   def number_of_descendants_named(name)
-    children.inject(0) do |count, child|
-      count += 1 if child.name == name
-      count + child.number_of_living_decendants_named(name)
-    end
+    count_descendants_matching{ |descendant| descendant.name == name}
   end
+
+  protected
+
+    def count_descendants_matching(&block)
+      children.inject(0) do |count, child|
+        count += 1 if yield child
+        count + child.count_descendants_matching(&block)
+      end
+    end
 end
+
+
+#気づき：　Java6だと使えませんね！Java8だとおそらく使えるのだろうけど。。。
+#でもかなりDRYな作りになったしビジネスロジックを公開メソッドの中に保てた。
+
