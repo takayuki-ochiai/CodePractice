@@ -11,19 +11,19 @@ class Card
   end
 
   def check_role
-    character_nums =("A".."Z").reduce([]) { |result, char| result.push(@cards.scan(/[#{char}¥*]/).size) }
+    return "FourCard" if show_max_character_count == 4
+    return "ThreeCard" if show_max_character_count == 3
+    return "TwoPair" if show_max_character_count == 2 && count_same_character.count(2) == 2
+    return "OnePair" if show_max_character_count == 2
+    "NoPair"
+  end
 
-    if character_nums.max == 4
-      "FourCard"
-    elsif character_nums.max == 3
-      "ThreeCard"
-    elsif character_nums.max == 2 && character_nums.count(2) == 2
-      "TwoPair"
-    elsif character_nums.max == 2
-      "OnePair"
-    else
-      "NoPair"
-    end
+  def count_same_character
+    ("A".."Z").reduce([]) { |result, char| result.push(@cards.scan(/[#{char}¥*]/).size) }
+  end
+
+  def show_max_character_count
+    count_same_character.max
   end
 end
 

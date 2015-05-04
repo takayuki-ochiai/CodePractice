@@ -1,4 +1,4 @@
-require "paiza"
+require "four_card"
 describe "paizaプログラミング問題テスト用" do
 
   it " FourCard" do
