@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>自己紹介だよ</title>
+    <meta charset="utf-8">
+    <link href="css/intro.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-background">
+        hoge
+        </div>
+        <div class="container">
+            <div class="header-image">
+                <img src="photo/header.JPG" alt="header">
+            </div>
+            <div class="thumbnail-image">
+                <img src="photo/thumbnail.jpg" alt="thumbnail">
+                <div class="name-and-tagline">
+                    <p class="name white-text text-shadow">落合隆行</p>
+                    <p class="margin-5px white-text font-size-15px text-shadow">"人は強くなければ生きていけないが、優しくなければ生きていく資格はない"</p>
+                </div>
+                <div class="user-tag"><h2>エンジニア見習い Eltex, inc. </h2></div>
+            </div>
+        </div>
+    </header>
+    <div class="profile-container">
+        <ul class="profile-menu font-size-18px gray-bottom-border">
+            <li class="profile-tab selected">プロフィール</li>
+            <li class="biography-tab">略歴</li>
+            <li class="link-tab">関連リンク</li>
+        </ul>
+        <div class="profile-content font-size-14px">
+            <div class="profile-data visible">
+                <h2>紹介文</h2>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+            </div>
+            <div class="biography-data">
+                <h2>略歴</h2>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+            </div>
+            <div class="link-data">
+                <h2>関連リンク</h2>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+                <p>hogehoge</p>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        $(function() {
+            //クリックしたときのファンクションをまとめて指定
+            $('.profile-menu li').click(function() {
+
+                //.index()を使いクリックされたタブが何番目かを調べ、
+                //indexという変数に代入します。
+                var index = $('.profile-menu li').index(this);
+
+                //コンテンツを一度すべて非表示にし、
+                //$('.profile-content div').css('display','none');
+                //$('.profile-content div').css('invisible');
+
+                //クリックされたタブと同じ順番のコンテンツを表示します。
+                //$('.profile-content div').eq(index).css('display','block');
+                $('.profile-content div').removeClass('visible');
+                $('.profile-content div').eq(index).addClass('visible');
+
+                //一度タブについているクラスselectを消し、
+                $('.profile-menu li').removeClass('selected');
+
+                //クリックされたタブのみにクラスselectをつけます。
+                $(this).addClass('selected')
+            });
+        });
+    </script>
+</body>
+</html>

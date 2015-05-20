@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 require 'anemone'
+require 'nokogiri'
+require 'kconv'
 
 #クロールの起点となるURLを指定
 urls = []
