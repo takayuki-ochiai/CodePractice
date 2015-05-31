@@ -1,4 +1,4 @@
-# Here your code !
+ require "pry"
 class User
   attr_accessor :current_x, :current_y
   attr_accessor :initial_x
@@ -73,27 +73,23 @@ class AmidaMap
     #現在位置の縦線上にあるすべての分岐情報を取ってくる
     branches = @horizontal_lines.collect do |horizontal_line|
       horizontal_line.match_x(current_x)
-    end
+    end.compact
 
-    #分岐情報のなかで進行方向に存在するものを返す
+
+    # #分岐情報のなかで進行方向に存在するものを返す
     branches.select! do |branch|
       branch[:from_y] - current_y > 0
     end
-
-    #分岐情報のなかで現在のy位置との差が最小のものを返す
+    # #分岐情報のなかで現在のy位置との差が最小のものを返す
     branches.min_by{ |branch| branch[:from_y] - current_y }
   end
 end
 
-      lines = [ HorizontalLine.new("1", "2", "2"), HorizontalLine.new("1", "3", "3"), line3 = HorizontalLine.new("2", "4", "4") ]
-      amida_map = AmidaMap.new()
+lines = [ HorizontalLine.new("1", "2", "2"), HorizontalLine.new("1", "3", "3"),HorizontalLine.new("2", "4", "4") ]
+amida_map = AmidaMap.new()
 
-      lines.each do |line|
-        amida_map.add_horizontal_line(line)
-      end
-
-puts "hoge"
-#puts amida_map.horizontal_lines
-#amida_map.search_nearest_branch(1,0)
-
-
+lines.each do |line|
+    amida_map.add_horizontal_line(line)
+end
+puts amida_map.horizontal_lines
+puts amida_map.search_nearest_branch(1,0)

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrapの練習</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+
+    <div id="header" class="container" style="background:red;">header</div>
+
+    <div class="container width-1000 height-1000">
+
+      <div class="row ">
+        <div class="col-sm-3" style="background:gray;">Side1</div>
+        <form action="ここは各自やってね" method="post" accept-charset="utf-8">
+          <div class="col-sm-9" >
+            <div class="row u-mt--10">
+                <div class="col-sm-3 border-solid height-100" ><span>ここにラベルを入れる</span></div>
+                <div class="col-sm-8 border-solid height-100" ><input type="textarea" /> こっち側にinput</div>
+            </div>
+            <div class="row u-mt--10">
+                <div class="col-sm-3 border-solid height-100" ><span>入力必須のやつはこのタグつけましょう<span class="label label-danger">必須</span></span></div>
+                <div class="col-sm-8 border-solid height-100" ><input type="text" /> こっち側にinput</div>
+            </div>
+            <div class="row u-mt--10">
+                <div class="col-sm-3 border-solid height-70" >入力必須のやつはこのタグつけましょう<span class="label label-danger">必須</span></div>
+                <div class="col-sm-8 border-solid height-70" >hoge</div>
+            </div>
+            <div class="row u-mt--10">
+                <div class="col-sm-3 border-solid height-100" >Side1</div>
+                <div class="col-sm-8 border-solid height-100" >hoge</div>
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+
+    <div id="footer" class="container" style="background:blue;">footer</div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

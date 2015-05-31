@@ -1,0 +1,240 @@
+.book-iist{
+  height: 300px;
+}
+
+.review-list{
+  height: 300px;
+}
+
+.width-1400 {
+  width: 1400px;
+}
+
+.height-1200{
+  height: 1200px;
+}
+
+.height-800{
+  height: 800px;
+}
+
+.height-600{
+  height: 600px;
+}
+
+.height-400{
+  height: 400px;
+}
+
+.height-250{
+  height: 250px;
+}
+
+.height-100{
+  height: 100px;
+}
+
+.height-80{
+  height: 80px;
+}
+
+.height-70{
+  height: 70px;
+}
+
+.height-60{
+  height: 60px;
+}
+
+.height-50{
+  height: 50px;
+}
+
+.height-40{
+  height: 50px;
+}
+
+
+.summary-head{
+  height: 45px;
+  border-left: 6px solid #f39800;
+  line-height: 45px;
+}
+
+.border-solid {
+  border: solid 1px gray;
+}
+
+.border {
+  border-top: dotted 1px gray;
+}
+
+.book-photo-list-img{
+  height: 200px;
+  width: 150px;
+}
+
+.review-photo-list-img{
+  height: 250px;
+  width: 250px;
+}
+
+.book-photo{
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.book-item-info{
+  margin: auto;
+  line-height: 120%;
+  width: 150px;
+  height: 55px;
+  padding: 5px;
+  text-align: left;
+}
+
+.review-item-info{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+  width: 250px;
+  height: 60px;
+  background: rgba(0,0,0,0.4);
+  padding: 5px;
+  text-align: left;
+}
+
+/*/commonの共通スタイルに組み込んだらセレクタ数が死んだので整理してから統合
+//フォントサイズ*/
+.u-fs--30 {
+ font-size: 30px;
+}
+
+.u-fs--24 {
+  font-size: 24px!important;
+}
+
+.u-fs--20 {
+  font-size: 20px!important;
+}
+
+.u-fs--18 {
+  font-size: 18px!important;
+}
+
+.u-fs--16 {
+  font-size: 16px!important;
+}
+
+.u-fs--14 {
+ font-size: 14px!important;
+}
+
+.u-fs--12 {
+  font-size: 12px!important;
+}
+
+.u-fs--11 {
+  font-size: 11px!important;
+}
+
+.u-fs--9 {
+  font-size: 9px!important;
+}
+
+//余白
+.u-mt--0 {
+  margin-top: 0px!important;
+}
+
+.u-mt--5 {
+  margin-top: 5px!important;
+}
+
+.u-mt--6 {
+  margin-top: 5px!important;
+}
+
+.u-mt--10 {
+  margin-top: 10px!important;
+}
+
+.u-mt--20 {
+  margin-top: 20px!important;
+}
+
+.u-mt--30 {
+  margin-top: 30px!important;
+}
+
+.u-mb--n30 {
+  margin-bottom: -30px!important;
+}
+
+.u-mb--0 {
+  margin-bottom: 0!important;
+}
+
+.u-mb--5 {
+  margin-bottom: 5px!important;
+}
+
+.u-mb--10 {
+  margin-bottom: 10px!important;
+}
+
+.u-mb--15 {
+  margin-bottom: 15px!important;
+}
+
+.u-mb--20 {
+  margin-bottom: 20px!important;
+}
+
+.u-mb--40 {
+ margin-bottom: 40px!important;
+}
+
+.u-mb--50 {
+ margin-bottom: 50px!important;
+}
+
+.u-ml--8 {
+  margin-left: 8px!important;
+}
+
+.u-ml--10 {
+  margin-left: 10px!important;
+}
+
+.u-ml--15 {
+  margin-left: 15px!important;
+}
+
+.u-ml--25 {
+  margin-left: 25px!important;
+}
+
+.u-ml--20 {
+ margin-left: 20px!important;
+}
+
+.u-mr--5 {
+  margin-right: 5px!important;
+}
+
+.u-mr--10 {
+  margin-right: 10px!important;
+}
+
+.u-mr--15 {
+  margin-right: 15px!important;
+}
+
+.u-mr--20 {
+ margin-right: 20px!important;
+}
