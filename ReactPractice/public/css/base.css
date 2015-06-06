@@ -60,3 +60,17 @@ p, ul {
 ul {
   padding-left: 30px;
 }
+
+
+.sample-enter {
+     -webkit-transition: 1s ease-in;
+}
+.sample-enter.sample-enter-active {
+    font-size: 80px;
+}
+.sample-leave {
+    -webkit-transition: .5s ease-out;
+}
+.sample-leave.sample-leave-active {
+    font-size: 10px;
+}

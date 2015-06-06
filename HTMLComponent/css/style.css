@@ -1,3 +1,7 @@
+body{
+  background-color: #fefef7;
+}
+
 .book-iist{
   height: 300px;
 }
@@ -6,8 +10,28 @@
   height: 300px;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .width-1400 {
   width: 1400px;
+}
+
+.width-100 {
+  width: 100px;
+}
+
+.width-50 {
+  width: 50px;
+}
+
+.width-60 {
+  width: 60px;
+}
+
+.width-75 {
+  width: 75px;
 }
 
 .height-1200{
@@ -77,6 +101,11 @@
 .review-photo-list-img{
   height: 250px;
   width: 250px;
+}
+
+.book-show-img{
+  height: 300px;
+  width: 220px;
 }
 
 .book-photo{
@@ -171,6 +200,10 @@
   margin-top: 30px!important;
 }
 
+.u-mt--90 {
+  margin-top: 90px!important;
+}
+
 .u-mb--n30 {
   margin-bottom: -30px!important;
 }
@@ -219,6 +252,18 @@
   margin-left: 25px!important;
 }
 
+.u-ml--30 {
+  margin-left: 30px!important;
+}
+
+.u-ml--40 {
+  margin-left: 40px!important;
+}
+
+.u-ml--60 {
+  margin-left: 60px!important;
+}
+
 .u-ml--20 {
  margin-left: 20px!important;
 }
@@ -238,3 +283,37 @@
 .u-mr--20 {
  margin-right: 20px!important;
 }
+
+.u-pl--10 {
+  padding-left: 10px!important;
+}
+
+.u-pl--20 {
+  padding-left: 20px!important;
+}
+
+.u-pr--10 {
+  padding-right: 10px!important;
+}
+
+.u-pr--20 {
+  padding-right: 20px!important;
+}
+
+i.yellow{
+  color: #f5b629;
+}
+
+i.skyblue{
+  color: #4ea6cc;
+}
+
+.reviews-header {
+  border-bottom: 5px #333 solid;
+}
+
+.main-left-border{
+  border-left: 1px solid #DDD;
+}
+
+
