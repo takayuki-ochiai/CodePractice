@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrapの練習</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+
+    <div id="header" class="container" style="background:red;">header</div>
+
+    <div class="container width-1000 height-1000">
+
+      <div class="row">
+        <div class="col-sm-3" style="background:gray;">Side1</div>
+        <div class="col-sm-9 main-left-border" >
+            <h1 class="u-ml--15">${book.bookNameMain}</h1>
+            <div class="col-sm-4 ">
+                <img src="photo/servlet.jpg" alt="書籍画像" class="book-show-img">
+            </div>
+            <div class="col-sm-8">
+              <div class="u-pr--10 u-pl--10">
+                 <div class="u-fs--20"><i class="glyphicon glyphicon-star yellow"></i><%= reviewsPointAverage %>評価 <i class="glyphicon glyphicon-comment skyblue"></i><%= reviewsCount %>レビュー</div>
+                 <div class="u-fs--16">著者：  ${book.author} </div>
+                 <div class="u-fs--16">¥ ${book.price} </div>
+                 <div class="u-fs--16">${book.issueDay}発売</div>
+                 <div class="u-fs--16 u-mt--30">中学に進んでまもなく、どうしても学校へ足が向かなくなった少女まいは、季節が初夏へと移り変るひと月あまりを、西の魔女のもとで過した。西の魔女ことママのママ、つまり大好きなおばあちゃんから、まいは魔女の手ほどきを受けるのだが、魔女修行の肝心かなめは、何でも自分で決める、ということだった。喜びも希望も、もちろん幸せも……。その後のまいの物語「渡りの一日」併録。</div>
+              </div>
+            </div>
+            <div class="col-sm-12 u-mt--90">
+                <p class="u-fs--20 reviews-header u-mb--40">${book.bookNameMain} の感想・レビュー</p>
+                <div class="review-item">
+                    <div class="u-fs--16">${review.reviewComment}</div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="container" style="background:blue;">footer</div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

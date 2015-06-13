@@ -420,24 +420,52 @@ var KlassSet = React.createClass({
 var CSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var CSSAnime = React.createClass({
+  getInitialState() {
+    return {
+      value: '(´・ω・｀)'
+    };
+  },
+  onClick() {
+    var value = this.state.value === '(´・ω・｀)' ? '(｀･ω･´)ゞ' : '(´・ω・｀)';
+    this.setState({ value: value });
+  },
+  render() {
+    var value = <span className="sample" key={this.state.value}>{this.state.value}</span>;
+    return (
+      <div>
+        <div>Animation!!<button onClick={this.onClick}>click!!</button></div>
+        <CSSTransitionGroup transitionName="sample">
+          {value}
+        </CSSTransitionGroup>
+      </div>
+    );
+  }
+});
+
+//requestAnimationFrameを使ったアニメーション
+var Positioner = React.createClass({
     getInitialState() {
-        return {
-            value: '(´・ω・｀)'
-        };
+        return { position: 0 };
     },
-    onClick() {
-      var value = this.state.value === '(´・ω・｀)' ? '(｀･ω･´)ゞ' : '(´・ω・｀)';
+    resolveAnimationFrame() {
+        var timestamp = new Date();
+        var timeRemaining = Math.max(0, this.props.animationCompleteTimestamp - timestamp);
+
+        if (timeRemaining > 0) {
+            this.setState({ position: timeRemaining});
+        }
     },
+
+    componentWillUpdate() {
+        if (this.props.animationCompleteTimestamp) {
+          requestAnimationFrame(this.resolveAnimationFrame);
+        }
+    },
+
     render() {
-        var value = <span className="sample" key={this.state.value}>{this.state.value}</span>;
-        return (
-            <div>
-                <div>Animation<button onClick={this.onClick}>click</button></div>
-                <CSSTransitionGroup transitionName="sample">
-                    {value}
-                </CSSTransitionGroup>
-            </div>
-        );
+        var divStyle = {left: this.state.position};
+
+        return <div style={divStyle}>この要素が動く</div>
     }
 });
 
