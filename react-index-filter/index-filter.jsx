@@ -55,13 +55,8 @@ var FilterItem = React.createClass({
   }
 });
 
-
-
 var IndexFilter = React.createClass({
   getInitialState: function() {
-    this.props.options.forEach(option) {
-      option.hasChecked = false;
-    }
     return {
       options: this.props.options,
       isRevealed: true
@@ -72,7 +67,7 @@ var IndexFilter = React.createClass({
     this.setState({
       isRevealed: !this.state.isRevealed
     });
-  }
+  },
 
   toggleChecked: function(selectedOption) {
     var options = this.state.options
@@ -104,3 +99,5 @@ var IndexFilter = React.createClass({
     );
   }
 })
+
+module.exports = IndexFilter;

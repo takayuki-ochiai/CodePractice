@@ -3,8 +3,6 @@
 var React = require('react'),
       FontAwesome = require('react-fontawesome');
 
-
-
 var FilterItem = React.createClass({displayName: "FilterItem",
   getInitialState: function() {
     return {
