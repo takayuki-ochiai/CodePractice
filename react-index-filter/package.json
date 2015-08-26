@@ -1,8 +1,9 @@
 {
   "name": "react-index-filter",
-  "version": "0.0.21",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "keywords": "react-component",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

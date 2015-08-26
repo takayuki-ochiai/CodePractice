@@ -10,12 +10,12 @@ gulp.task('compile:scss', function() {
   gulp.src('./css/*.scss')
          .pipe(plumber())
          .pipe(sass())
-         .pipe(concat('bundle.css'))
+         .pipe(concat('index-filter.css'))
          .pipe(gulp.dest('./css'))
 });
 
 gulp.task('default', function () {
-    return gulp.src('./index-filter.jsx')
+    return gulp.src('./src/index-filter.jsx')
         .pipe(react({
             harmony: true
         }))
