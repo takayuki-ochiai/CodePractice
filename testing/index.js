@@ -4,24 +4,34 @@
 var IndexFilter = require('react-index-filter'),
       React = require('react');
 
-var options = [{
-  id : "takayuki-ochiai",
-  iconUrl: "https://avatars.githubusercontent.com/u/7022843?v=3",
-  hasChecked: false
-}];
+  var options = [
+    {
+      id : "sample-1",
+      iconUrl: "https://avatars.githubusercontent.com/u/7022843?v=3",
+      hasChecked: false
+    },
+    {
+      id : "sample-2",
+      iconUrl: "https://avatars.githubusercontent.com/u/7022843?v=3",
+      hasChecked: false
+    },
+    {
+      id : "sample-3",
+      iconUrl: "https://avatars.githubusercontent.com/u/7022843?v=3",
+      hasChecked: false
+    },
+    {
+      id : "sample-4",
+      iconUrl: "https://avatars.githubusercontent.com/u/7022843?v=3",
+      hasChecked: false
+    }
+  ];
 
-var Hello = React.createClass({displayName: "Hello",
-  render: function() {
-    return (
-      React.createElement("h1", null, "Hello, ", this.props.name, " World !")
-    );
-  }
-});
 
-React.render(
-  React.createElement(IndexFilter, {options: options, title: "hoge"}),
-  document.getElementById('app')
-);
+  React.render(
+    React.createElement(IndexFilter, {options: options, title: "Sample Item List"}),
+    document.getElementById('app')
+  );
 })();
 
 },{"react":160,"react-index-filter":3}],2:[function(require,module,exports){
