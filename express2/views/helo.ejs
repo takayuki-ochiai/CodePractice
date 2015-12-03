@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <table>
+      <% for(var key in data) { %>
+        <tr><td><%= key %></td></tr>
+        <tr><td><%= data[key] %></td></tr>
+      <% } %>
+    </table>
+  </body>
+</html>
