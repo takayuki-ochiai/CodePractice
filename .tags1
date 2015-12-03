@@ -1,0 +1,11 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Othello	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/board_game.rb	/^class Othello$/;"	class	line:3
+initialize	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/board_game.rb	/^  def initialize$/;"	method	line:10	class:Othello
+disp	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/board_game.rb	/^  def disp$/;"	method	line:24	class:Othello
+vertical_line	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/board_game.rb	/^  def vertical_line(n)$/;"	method	line:32	class:Othello
+horizontal_line	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/board_game.rb	/^  def horizontal_line(n)$/;"	method	line:36	class:Othello
