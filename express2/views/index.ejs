@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<!--  モジュール名 -->
+<html ng-app="myApp">
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+    <script src="javascripts/controller.js"></script>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <!-- コントローラー名 -->
+  <body ng-controller="MyController">
+    <!--  Angulra JS サンプルページ　-->
+    <div>
+      {{ msg }}
+    </div>
   </body>
 </html>

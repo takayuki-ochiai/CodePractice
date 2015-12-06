@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--  モジュール名 -->
+<html ng-app="myApp">
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+    <script src="javascripts/books.js"></script>
+  </head>
+  <!-- コントローラー名 -->
+  <body ng-controller="MyController" ng-strict-di>
+    <!--  Angulra JS サンプルページ　-->
+    <table class="table">
+    <div>
+      <tr>
+        <th>ISBNコード</th><th>書名</th><th>価格</th>
+        <th>出版社</th><th>刊行日</th>
+      </tr>
+      <tr ng-repeat="book in ::books">
+        <td>{{book.isbn}}</td>
+        <td>{{book.title}}</td>
+        <td>{{book.price}}円</td>
+        <td>{{book.publish}}</td>
+        <td>{{book.published | date: 'yyyy年MM月dd日'}}</td>
+        <td><img ng-src="http://www.wings.msn.to/books/{{book.isbn}}/{{book.isbn}}.jpg" alt="{{book.title}}" /></td>
+      </tr>
+    </div>
+    </table>
+  </body>
+</html>

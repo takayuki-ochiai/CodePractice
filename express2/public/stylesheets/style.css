@@ -11,3 +11,35 @@ table tr td {
   background-color: #eef;
   padding: 3px;
 }
+
+.back {
+  background-color: #f00;
+  color: #fff;
+}
+
+.chara {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.space {
+  margin: 15px;
+  padding: 15px;
+}
+
+.orange {
+  color: orange;
+}
+
+.red {
+  background-color: #f00;
+  color: #fff;
+}
+
+.green {
+  background-color: #0f0;
+}
+
+.blue {
+  background-color: #00f;
+}

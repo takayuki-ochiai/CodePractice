@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--  モジュール名 -->
+<html ng-app="myApp">
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+    <script src="javascripts/event.js"></script>
+  </head>
+  <!-- コントローラー名 -->
+  <body ng-controller="MyController" ng-strict-di>
+    <form>
+      <label for="name">名前: </label>
+      <!-- $scope.myNameと双方向データバインディングする -->
+      <input type="text" name="name" ng-model="myName" />
+      <button ng-click="onclick()">送信</button>
+    </form>
+    <div>
+      {{greeting}}
+    </div>
+  </body>
+</html>

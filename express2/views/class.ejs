@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--  モジュール名 -->
+<html ng-app="myApp">
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+    <script src="javascripts/class.js"></script>
+  </head>
+  <!-- コントローラー名 -->
+  <body ng-controller="MyController" ng-strict-di>
+    <form>
+      <button ng-click="myStyle='red'"></button>
+      <button ng-click="myStyle='green'"></button>
+      <button ng-click="myStyle='blue'"></button>
+    </form>
+    <div class="orange" ng-class="myStyle">
+      <p>
+        隣の客はよく柿食う客だ
+      </p>
+      <p>
+        青巻き髪赤巻き髪期巻き髪
+      </p>
+    </div>
+
+    <form>
+      <label><input type="checkbox" ng-model="bBack">背景</label>
+      <label><input type="checkbox" ng-model="bChara">フォント</label>
+      <label><input type="checkbox" ng-model="bSpace">余白</label>
+    </form>
+
+    <div ng-class="{ back: bBack, chara: bChara, space: bSpace }">
+      世界はとっくの昔に終わっていて。
+      勇者の物語もとっくの昔に完結していて。
+      いま俺は、彼女たちの終わりに手を貸している。
+    </div>
+  </body>
+</html>

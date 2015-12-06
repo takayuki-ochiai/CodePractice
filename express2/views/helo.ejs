@@ -6,11 +6,13 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <table>
-      <% for(var key in data) { %>
-        <tr><td><%= key %></td></tr>
-        <tr><td><%= data[key] %></td></tr>
-      <% } %>
-    </table>
+    <div><%= msg %></div>
+    <div><%= cokkie %></div>
+    <p><a href="/helo?p1=hello&p2=bye">link</a></div>
+
+    <form action="/helo" method="post">
+      <input type="text" name="input1" value= "<%= input %>">
+      <input type="submit">
+    </form>
   </body>
 </html>
