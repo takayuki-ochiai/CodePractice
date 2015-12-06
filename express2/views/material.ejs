@@ -17,5 +17,33 @@
     <md-button class="md-fab" aria-label="FAB">
       <md-icon md-svg-src="your/icon.svg"></md-icon>
     </md-button>
+    <md-autocomplete md-floating-label="name" md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
+      <span md-highlight-text="searchText">sss</span>
+    </md-autocomplete>
+    <md-button> Flat Button </md-button>
+    <md-button href="http://google.com"> Flat link </md-button>
+    <md-button class="md-raised"> Raised Button </md-button>
+    <md-button ng-disabled="true"> Disabled Button </md-button>
+    <md-button class="md-fab" aria-label="FAB">
+  <md-icon md-svg-src="your/icon.svg"></md-icon>
+</md-button>
+<!-- mini-FAB -->
+<md-button class="md-fab md-mini" aria-label="Mini FAB">
+  <md-icon md-svg-src="your/icon.svg"></md-icon>
+</md-button>
+<!-- Button with SVG Icon -->
+<md-button class="md-icon-button" aria-label="Custom Icon Button">
+  <md-icon md-svg-icon="path/to/your.svg"></md-icon>
+</md-button>
+
+<md-select ng-model="selectedUser">
+  <md-option ng-value="user" ng-repeat="user in users">{{ user.name }}</md-option>
+</md-select>
+
+<md-radio-group ng-model="selected">
+  <md-radio-button ng-repeat="user in users" ng-value="user.id" aria-label="{{ user.name }}">
+         {{ user.name }}
+  </md-radio-button>
+</md-radio-group>
   </body>
 </html>
