@@ -2,6 +2,10 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
+    source = require('vinyl-source-stream'),
+    browserify = require('browserify'),
+    babelify = require('babelify'),
+    watchify = require('watchify'),
     plumber = require('gulp-plumber');
 
 var browserSync = require('browser-sync');
@@ -42,9 +46,27 @@ gulp.task('bs', function() {
 //
 //   rebundle();
 // }
-//
-// gulp.task('watch', function() { return watch(); });
-//
+
+function compileMaterial() {
+  var bundler = watchify(browserify('./public/javascripts/material-common.js', { debug: true }).transform(babelify));
+
+  function rebundle() {
+    bundler
+      .bundle()
+      .on("error", function (err) {
+        console.log("Error : " + err.message);
+        browserSync.notify("Browserify Error!");
+      })
+      .pipe(source('material-bundle.js'))
+      //ファイルの出力先　現在存在しない出力先だと作ってくれる
+      .pipe(gulp.dest('./public/javascripts/'))
+      .pipe(browserSync.reload({stream: true}));
+  }
+  rebundle();
+}
+
+gulp.task('watch', function() { return watch(); });
+
 // gulp.task('reload', function() {
 //
 // });
@@ -79,7 +101,11 @@ gulp.task('watch:template', function() {
 // function watch() {
 //   return compile(true);
 // };
-//
+
+gulp.task('compile-material', function() {
+  compileMaterial();
+})
+
 // gulp.task('watch', function() { return watch(); });
 gulp.task('bs-reload', function () {
     browserSync.reload();

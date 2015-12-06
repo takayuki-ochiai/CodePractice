@@ -3,12 +3,19 @@
 <html ng-app="myApp">
   <head>
     <title><%= title %></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
-    <script src="javascripts/event.js"></script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="stylesheets/angular-material.css" />
+    <!-- <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css"> -->
+    <!-- <script src="/node_modules/angular-aria/angular-aria.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="javascripts/material-bundle.js"></script>
+    <script src="javascripts/material.js"></script>
   </head>
   <!-- コントローラー名 -->
   <body ng-controller="MyController" ng-strict-di>
-
+    <md-button> Flat Button </md-button>
+    <md-button class="md-fab" aria-label="FAB">
+      <md-icon md-svg-src="your/icon.svg"></md-icon>
+    </md-button>
   </body>
 </html>
