@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--  モジュール名 -->
+<html ng-app="myApp">
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+    <script src="javascripts/if.js"></script>
+  </head>
+  <!-- コントローラー名 -->
+  <body ng-controller="MyController" ng-strict-di>
+    <label for="show">表示・非表示：</label>
+    <input type="checkbox" ng-model="show">
+    <button ng-click="onclick()">背景反転</button>
+    <div ng-if="show">
+      <div id="panel">
+        ちゃんとした勇者になりたかったけれど、結局なれなかった元少年。クラスチェンジ条件を満たさないままやみくもにレベルを上げ続けていたらステータスや補助スキルが軒並みカンストしちゃった感じの人。
+そこまでがんばったのに「この武器はストーリーの都合で君には装備できないんだ、ゴメンネ？」なんて言われたら、そりゃあ、やさぐれるってもんですよ。
+      </div>
+
+
+    </div>
+
+    <label for="show2">表示・非表示：</label>
+    <input type="checkbox" ng-model="show2">
+    <button ng-click="hogehoge()">背景反転</button>
+    <div ng-show="show2">
+      <div id="panel2">
+        「悲劇のヒロインになるために生まれてきたような種族」の少女。当人にその自覚はあるが、まったく納得はしていない。普段のふざけた言動は運命に対する抵抗のつもり。
+以前に一度、「死んだときに誰かに悲しまれたら負けなんすよ、あたし的には」などとクトリに話して、ガチ泣き＆全力びんたを食らったことがあるとかなんとか。
+      </div>
+    </div>
+
+    <form>
+      <select ng-model="season">
+        <option value="">四季を選択</option>
+        <option value="spring">春</option>
+        <option value="summer">夏</option>
+        <option value="autumn">秋</option>
+        <option value="winter">冬</option>
+      </select>
+    </form>
+
+    <div ng-switch="season">
+      <span ng-switch-when="spring">春はあけぼの…</span>
+      <span ng-switch-when="summer">夏は夜…</span>
+      <span ng-switch-when="autumn">秋は夕暮れ…</span>
+      <span ng-switch-when="winter">冬はつとめて…</span>
+      <span ng-switch-default>選択してください</span>
+    </div>
+  </body>
+</html>

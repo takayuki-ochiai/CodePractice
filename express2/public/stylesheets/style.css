@@ -43,3 +43,8 @@ table tr td {
 .blue {
   background-color: #00f;
 }
+
+#panel {
+  background-color: #fff;
+  color: #000;
+}

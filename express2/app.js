@@ -15,6 +15,8 @@ var service = require('./routes/service');
 var binding = require('./routes/binding');
 var event = require('./routes/event');
 var klass = require('./routes/class');
+var ngif = require('./routes/if');
+var material = require('./routes/material');
 
 var app = express();
 
@@ -40,6 +42,8 @@ app.use('/service', service);
 app.use('/binding', binding);
 app.use('/event', event);
 app.use('/class', klass);
+app.use('/if', ngif);
+app.use('/material', material);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

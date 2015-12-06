@@ -53,8 +53,11 @@ gulp.task('bs', function() {
  * Watch
  */
 gulp.task('watch:assets', function() {
-  gulp.watch('./views/**/*.ejs', ['bs-reload']);
   gulp.watch('./public/**/*.*', ['bs-reload']);
+})
+
+gulp.task('watch:template', function() {
+  gulp.watch('./views/**/*.ejs', ['bs-reload']);
 })
 // gulp.task('watch:css', function() {
 //   //第一引数に指定された対象ファイルについて第二引数で指定したタスクを実行する
@@ -82,4 +85,4 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 // gulp.task('default', ['bundle:css', 'watch', 'watch:css','bs']);
-gulp.task('default', ['bs', 'watch:assets']);
+gulp.task('default', ['bs', 'watch:assets', 'watch:template']);
