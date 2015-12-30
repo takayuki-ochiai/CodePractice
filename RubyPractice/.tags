@@ -1,0 +1,3 @@
+move	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/move_path.rb	/^def move(log)$/;"	method	line:5
+cut_bar	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/cut_bar.rb	/^def cut_bar(n, m, current)$/;"	method	line:3
+move	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/clean_robot.rb	/^def move(move_times, log)$/;"	method	line:5
