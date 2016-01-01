@@ -1,3 +1,6 @@
 move	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/move_path.rb	/^def move(log)$/;"	method	line:5
 cut_bar	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/cut_bar.rb	/^def cut_bar(n, m, current)$/;"	method	line:3
 move	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/clean_robot.rb	/^def move(move_times, log)$/;"	method	line:5
+sum_max	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/max_roulette_value.rb	/^def sum_max(roulette, n)$/;"	method	line:8
+sum_max2	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/max_roulette_value.rb	/^def sum_max2(roulette, n)$/;"	method	line:34
+max_value	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/max_roulette_value.rb	/^def max_value(roulette, range)$/;"	method	line:8
