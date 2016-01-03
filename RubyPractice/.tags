@@ -4,3 +4,8 @@ move	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/clean_robot
 sum_max	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/max_roulette_value.rb	/^def sum_max(roulette, n)$/;"	method	line:8
 sum_max2	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/max_roulette_value.rb	/^def sum_max2(roulette, n)$/;"	method	line:34
 max_value	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/max_roulette_value.rb	/^def max_value(roulette, range)$/;"	method	line:8
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/world_cup_shiritori.rb	/^def search(countries, prev, depth)$/;"	method	line:42
+move	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/step_meeting.rb	/^def move(diff)$/;"	method	line:20
+move2	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/step_meeting.rb	/^def move2(a, b)$/;"	method	line:41
+make_team	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/31_regs.rb	/^def make_team(students, member_num)$/;"	method	line:5
+check	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/whole_cake.rb	/^def check(n, pre, log, square)$/;"	method	line:33
