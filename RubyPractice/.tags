@@ -9,3 +9,12 @@ move	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/step_meeting.rb	/^def move(
 move2	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/step_meeting.rb	/^def move2(a, b)$/;"	method	line:41
 make_team	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/31_regs.rb	/^def make_team(students, member_num)$/;"	method	line:5
 check	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/whole_cake.rb	/^def check(n, pre, log, square)$/;"	method	line:33
+select_country	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/world_cup_shiritori.rb	/^def select_country(rest_countries, prev, log)$/;"	method	line:8
+step	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/step_meeting.rb	/^def step(rest_step, max_step)$/;"	method	line:3
+square	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/square_with_three_codes.rb	/^def square(length)$/;"	method	line:3
+cake	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/whole_cake.rb	/^def cake(cut_num, square_number, prev, log)$/;"	method	line:3
+count_zero	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/triangle_of_XOR.rb	/^def count_zero(this_step, depth, count, target)$/;"	method	line:2
+black_juck	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/black_juck.rb	/^def black_juck(coin, game)$/;"	method	line:3
+struck_out	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/struck_out.rb	/^def struck_out(panel)$/;"	method	line:2
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/efficient_parking_deck.rb	/^def search(prev, depth)$/;"	method	line:26
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/no_right_turn.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:10
