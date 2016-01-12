@@ -17,4 +17,14 @@ count_zero	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/triangle_of_XOR.rb	/^
 black_juck	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/black_juck.rb	/^def black_juck(coin, game)$/;"	method	line:3
 struck_out	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/struck_out.rb	/^def struck_out(panel)$/;"	method	line:2
 search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/efficient_parking_deck.rb	/^def search(prev, depth)$/;"	method	line:26
+max_area	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/club_activity.rb	/^def max_area(clubs, students, area)$/;"	method	line:5
+resistance	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/golden_ratio_of_combined_resistance.rb	/^def resistance(resistances)$/;"	method	line:8
+product	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/golden_ratio_of_combined_resistance.rb	/^def product(ary)$/;"	method	line:38
+parallel	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/golden_ratio_of_combined_resistance.rb	/^def parallel(ary)$/;"	method	line:47
+calc	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/golden_ratio_of_combined_resistance.rb	/^def calc(n)$/;"	method	line:53
 search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/no_right_turn.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:10
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/no_right_turn.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:8
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/no_right_turnw.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:8
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/efficient_parking_deck.rb	/^def search(prev, depth)$/;"	method	line:19
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/efficient_parking_deck2.rb	/^def search(prev, depth)$/;"	method	line:18
+set_tap	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/octpus_outlet.rb	/^def set_tap(remain)$/;"	method	line:9

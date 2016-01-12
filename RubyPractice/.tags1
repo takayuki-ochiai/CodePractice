@@ -4,4 +4,4 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/no_right_turn.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:10
+set_tap	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/octpus_outlet.rb	/^def set_tap(remain)$/;"	method	line:9
