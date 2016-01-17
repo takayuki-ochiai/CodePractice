@@ -22,9 +22,10 @@ resistance	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/golden_ratio_of_combi
 product	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/golden_ratio_of_combined_resistance.rb	/^def product(ary)$/;"	method	line:38
 parallel	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/golden_ratio_of_combined_resistance.rb	/^def parallel(ary)$/;"	method	line:47
 calc	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/golden_ratio_of_combined_resistance.rb	/^def calc(n)$/;"	method	line:53
-search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/no_right_turn.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:10
 search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/no_right_turn.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:8
 search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/no_right_turnw.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:8
 search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/efficient_parking_deck.rb	/^def search(prev, depth)$/;"	method	line:19
 search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/efficient_parking_deck2.rb	/^def search(prev, depth)$/;"	method	line:18
 set_tap	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/octpus_outlet.rb	/^def set_tap(remain)$/;"	method	line:9
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/no_right_turn.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:7
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/minimum_path.rb	/^def search(x, y, left, bottom, is_return)$/;"	method	line:7

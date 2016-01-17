@@ -4,4 +4,4 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-set_tap	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/octpus_outlet.rb	/^def set_tap(remain)$/;"	method	line:9
+search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/minimum_path.rb	/^def search(x, y, left, bottom, is_return)$/;"	method	line:7
