@@ -29,3 +29,17 @@ search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/repeat_practice/efficient
 set_tap	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/octpus_outlet.rb	/^def set_tap(remain)$/;"	method	line:9
 search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/no_right_turn.rb	/^def search(x, y, dir, left, bottom)$/;"	method	line:7
 search	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/minimum_path.rb	/^def search(x, y, left, bottom, is_return)$/;"	method	line:7
+Crawler	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/login.rb	/^module Crawler$/;"	module	line:9
+Amazon	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/login.rb	/^  class Amazon$/;"	class	line:10	class:Crawler
+login	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/login.rb	/^    def login$/;"	method	line:13	class:Crawler.Amazon
+Crawler	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/blacklist.rb	/^module Crawler$/;"	module	line:9
+BlackListAlert	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/blacklist.rb	/^  class BlackListAlert$/;"	class	line:10	class:Crawler
+domain_check	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/blacklist.rb	/^    def domain_check(target)$/;"	method	line:13	class:Crawler.BlackListAlert
+aleart_notice	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/blacklist.rb	/^    def aleart_notice$/;"	method	line:24	class:Crawler
+Crawler	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-link.rb	/^module Crawler$/;"	module	line:11
+LinkChecker	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-link.rb	/^  class LinkChecker$/;"	class	line:12	class:Crawler
+initialize	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-link.rb	/^    def initialize$/;"	method	line:15	class:Crawler.LinkChecker
+find_links	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-link.rb	/^    def find_links$/;"	method	line:19	class:Crawler.LinkChecker
+screenshot	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-link.rb	/^    def screenshot(link)$/;"	method	line:32	class:Crawler.LinkChecker
+Crawler	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-autopager.rb	/^module Crawler$/;"	module	line:13
+LinkChecker	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-autopager.rb	/^  class LinkChecker$/;"	class	line:14	class:Crawler
