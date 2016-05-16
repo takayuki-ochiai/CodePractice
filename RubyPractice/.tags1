@@ -4,5 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Crawler	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-autopager.rb	/^module Crawler$/;"	module	line:13
-LinkChecker	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-autopager.rb	/^  class LinkChecker$/;"	class	line:14	class:Crawler

@@ -43,3 +43,11 @@ find_links	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-link
 screenshot	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-link.rb	/^    def screenshot(link)$/;"	method	line:32	class:Crawler.LinkChecker
 Crawler	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-autopager.rb	/^module Crawler$/;"	module	line:13
 LinkChecker	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-autopager.rb	/^  class LinkChecker$/;"	class	line:14	class:Crawler
+initialize	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-autopager.rb	/^    def initialize$/;"	method	line:17	class:Crawler.LinkChecker
+get_nextlink	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-autopager.rb	/^    def get_nextlink$/;"	method	line:24	class:Crawler.LinkChecker
+Crawler	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-poltergeist-robots.rb	/^module Crawler$/;"	module	line:21
+LinkChecker	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-poltergeist-robots.rb	/^  class LinkChecker$/;"	class	line:22	class:Crawler
+initialize	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-poltergeist-robots.rb	/^    def initialize$/;"	method	line:25	class:Crawler.LinkChecker
+find_links	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-poltergeist-robots.rb	/^    def find_links$/;"	method	line:30	class:Crawler.LinkChecker
+allowed?	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-poltergeist-robots.rb	/^    def allowed?(link)$/;"	method	line:41	class:Crawler.LinkChecker
+screenshot	/Users/TakayukiOchiai/ProgramCodes/RubyPractice/crawler/capybara-poltergeist-robots.rb	/^    def screenshot(link)$/;"	method	line:47	class:Crawler.LinkChecker

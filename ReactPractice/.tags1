@@ -1,0 +1,10 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+getInitialState	/Users/TakayukiOchiai/ProgramCodes/ReactPractice/public/scripts/example.js	/^  getInitialState: function() {$/;"	function	line:5
+onClickCountUp	/Users/TakayukiOchiai/ProgramCodes/ReactPractice/public/scripts/example.js	/^  onClickCountUp() {$/;"	function	line:11
+render	/Users/TakayukiOchiai/ProgramCodes/ReactPractice/public/scripts/example.js	/^  render: function() {$/;"	function	line:18
+CountUp	/Users/TakayukiOchiai/ProgramCodes/ReactPractice/public/scripts/example.js	/^var CountUp = React.createClass({$/;"	variable	line:3
